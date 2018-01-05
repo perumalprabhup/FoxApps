@@ -1,0 +1,33 @@
+  <section class="bg-primary" id="about"><!--AboutUs section-->
+      <div class="container" ><!--Container-->
+        <div class="row"><!--Row-->
+		
+          <div class="col-md-4 mx-auto">
+		   <h2 class="section-heading text-white">Our Best Features</h2>
+		   <hr class="light">
+		       <div class="center-block"> 
+		    <div class="table-responsive" >
+		  <table class="table table-bordered table-hover">
+			<tbody *ngFor="let abtUs of abtUsArray">
+		  <tr><td class="tblContent">{{abtUs.value}}</td></tr>
+		 <!-- <tr><td class="tblContent">Expert Staff</td></tr>
+		  <tr><td class="tblContent">24/7 Available</td></tr>
+		  <tr><td class="tblContent">Best Logistics Services</td></tr>-->
+		  </tbody>
+
+		  </table>
+		  </div>
+		  </div>
+          </div>
+		   <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">{{save}}</h2>
+            <hr class="light">
+            <p class="text-faded">{{content}}</p>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          </div>
+		
+
+        </div><!--/Row-->
+      </div><!--/Container-->
+    </section><!--/AboutUs section-->
+<app-page-component></app-page-component>

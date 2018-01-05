@@ -1,0 +1,102 @@
+
+    <section class="" id="yearsOfService">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">At Your Service</h2>
+            <hr class="primary">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box">
+             <h1 class="text-primary sr-icons">3012</h1>
+			 <hr class="primary">
+              
+              <h3 class="text-muted">Project Done.</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box">
+			<h1 class="text-primary sr-icons">24567</h1>
+              <hr class="primary">
+             
+              <h3 class="text-muted">Happy Clients</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box">
+             
+			 <h1 class="text-primary sr-icons">25 Years</h1>
+              <hr class="primary">
+             
+              <h3 class="text-muted">Experiences</h3>
+            </div>
+          </div>
+       
+   
+        </div><!--/Row-->
+      </div><!--/Container-->
+    </section><!--/AboutUs section-->
+	
+	 <section class="bg-Secondary" id="page">
+      <div class="container" >
+        <div class="row">
+		
+		   <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Why To Choose Our Company</h2>
+            <hr class="light">
+			
+			<h3>{{heading}}</h3>
+			<p>{{para}}</p>
+          </div>
+		<div class="col-md-4 mx-auto">
+		   <h2 class="section-heading text-white">Our Best Features</h2>
+		   <hr class="light">
+		       <div class="center-block"> 
+		    <div class="table-responsive" >
+		  <table class="table table-bordered table-hover">
+		  <thead>
+		  <tr><th><h3 align="center">Request A Quote</h3></th></tr>
+		  </thead>
+			<tbody  >
+		  <tr *ngFor="let tblValues of tblValuesArray"><td><div class="col-auto">
+      <label class="sr-only" for="{{tblValues.fors}}">{{tblValues.value}}</label>
+      <input type="text" class="form-control mb-2 mb-sm-0" id="{{tblValues.fors}}" placeholder="{{tblValues.value}}" required>
+    </div></td></tr>
+		<!--  <tr><td><div class="col-auto">
+      <label class="sr-only" for="shipFrom">Ship From</label>
+      <input type="text" class="form-control mb-2 mb-sm-0" id="shipFrom" placeholder="Ship From" required>
+    </div></td></tr>
+	<tr><td><div class="col-auto">
+      <label class="sr-only" for="shipTo">Ship To</label>
+      <input type="text" class="form-control mb-2 mb-sm-0" id="shipTo" placeholder="Ship To" required>
+    </div></td></tr>
+		<tr><td><div class="col-auto">
+      <label class="sr-only" for="email">Email Id</label>
+      <input type="text" class="form-control mb-2 mb-sm-0" id="email" placeholder="Email Id" required>
+    </div></td></tr>    -->
+	
+	<tr><td><div class="col-auto">
+      <label class="sr-only" for="message">Message</label>
+       <textarea class="form-control" id="message" rows="3"  placeholder="Message"  required></textarea>
+    </div></td></tr>
+		 
+		 <tr><td><div class="col-auto">
+      <label class="sr-only" for="btn">btn</label>
+  <button type="button" class="btn btn-primary">Submit Request</button>
+  </div></td></tr>
+	
+		  </tbody>
+
+		  </table>
+		  </div>
+		  </div>
+          </div>
+
+        </div><!--/Row-->
+      </div><!--/Container-->
+    </section><!--/AboutUs section-->
+	<app-service-component></app-service-component>
